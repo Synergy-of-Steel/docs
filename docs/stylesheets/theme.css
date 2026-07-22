@@ -1,0 +1,402 @@
+/* ==========================================================================
+   Synergy of Steel — custom theme
+   Dark, industrial, EVE-inspired: gunmetal & steel greys, amber signal
+   accent, sharp angular edges. Legibility first — this is a rulebook.
+   ========================================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap");
+
+/* --------------------------------------------------------------------------
+   Design tokens
+   -------------------------------------------------------------------------- */
+
+:root {
+  --syn-font-display: "Rajdhani", "IBM Plex Sans", -apple-system, Helvetica, Arial, sans-serif;
+
+  /* Signal colors (shared) */
+  --syn-amber: #f0a02c;          /* HUD warning amber — primary accent   */
+  --syn-amber-deep: #99621a;     /* amber for light backgrounds          */
+  --syn-steel-blue: #62aed6;     /* cool steel-cyan — links, code (dark) */
+  --syn-steel-blue-deep: #1c6390;/* links / code on light backgrounds    */
+
+  --syn-radius: 2px;             /* global corner radius — near-sharp    */
+}
+
+/* --------------------------------------------------------------------------
+   Color scheme: dark ("slate") — the primary look
+   -------------------------------------------------------------------------- */
+
+[data-md-color-scheme="slate"] {
+  --md-hue: 212;
+
+  /* Canvas & text */
+  --md-default-bg-color: #12161c;
+  --md-default-fg-color: rgba(222, 229, 236, 0.94);
+  --md-default-fg-color--light: rgba(222, 229, 236, 0.68);
+  --md-default-fg-color--lighter: rgba(222, 229, 236, 0.36);
+  --md-default-fg-color--lightest: rgba(222, 229, 236, 0.10);
+
+  /* Header / footer (gunmetal) */
+  --md-primary-fg-color: #1a212a;
+  --md-primary-fg-color--light: #2a3441;
+  --md-primary-fg-color--dark: #12181f;
+  --md-primary-bg-color: #dfe6ec;
+  --md-primary-bg-color--light: rgba(223, 230, 236, 0.68);
+
+  /* Accent (hover, focus, active) */
+  --md-accent-fg-color: var(--syn-amber);
+  --md-accent-fg-color--transparent: rgba(240, 160, 44, 0.10);
+  --md-accent-bg-color: #12161c;
+  --md-accent-bg-color--light: rgba(18, 22, 28, 0.68);
+
+  /* Links */
+  --md-typeset-a-color: var(--syn-steel-blue);
+
+  /* Code */
+  --md-code-bg-color: #1a2029;
+  --md-code-fg-color: #9fcbe4;
+
+  /* Local surfaces */
+  --syn-panel-bg: #181e26;
+  --syn-line: #2b3440;
+  --syn-table-head-bg: #1c232d;
+  --syn-row-hover: rgba(98, 174, 214, 0.06);
+  --syn-mark: var(--syn-amber);
+  --syn-link-hover: var(--syn-amber);
+}
+
+/* --------------------------------------------------------------------------
+   Color scheme: light ("default") — cool steel white, gunmetal chrome
+   -------------------------------------------------------------------------- */
+
+[data-md-color-scheme="default"] {
+  /* Canvas & text — slightly cool, not pure white */
+  --md-default-bg-color: #f7f8fa;
+  --md-default-fg-color: rgba(23, 30, 38, 0.92);
+  --md-default-fg-color--light: rgba(23, 30, 38, 0.64);
+  --md-default-fg-color--lighter: rgba(23, 30, 38, 0.34);
+  --md-default-fg-color--lightest: rgba(23, 30, 38, 0.08);
+
+  /* Header / footer stay gunmetal — the brand does not go pastel */
+  --md-primary-fg-color: #1e2630;
+  --md-primary-fg-color--light: #2c3744;
+  --md-primary-fg-color--dark: #161d25;
+  --md-primary-bg-color: #e6ebf0;
+  --md-primary-bg-color--light: rgba(230, 235, 240, 0.68);
+
+  /* Accent — darker amber for AA contrast on light ground */
+  --md-accent-fg-color: var(--syn-amber-deep);
+  --md-accent-fg-color--transparent: rgba(153, 98, 26, 0.10);
+  --md-accent-bg-color: #ffffff;
+  --md-accent-bg-color--light: rgba(255, 255, 255, 0.68);
+
+  /* Links */
+  --md-typeset-a-color: var(--syn-steel-blue-deep);
+
+  /* Code */
+  --md-code-bg-color: #eceff3;
+  --md-code-fg-color: #17547c;
+
+  /* Local surfaces */
+  --syn-panel-bg: #eef1f4;
+  --syn-line: #d3d9df;
+  --syn-table-head-bg: #e6eaee;
+  --syn-row-hover: rgba(28, 99, 144, 0.05);
+  --syn-mark: var(--syn-amber-deep);
+  --syn-link-hover: var(--syn-amber-deep);
+}
+
+/* --------------------------------------------------------------------------
+   Global chrome — sharp edges, hairline separations
+   -------------------------------------------------------------------------- */
+
+.md-header {
+  border-bottom: 1px solid rgba(240, 160, 44, 0.35);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.md-header__topic .md-ellipsis,
+.md-header__title {
+  font-family: var(--syn-font-display);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Navigation tabs — HUD strip */
+.md-tabs {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.md-tabs__link {
+  font-family: var(--syn-font-display);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 0.55rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid transparent;
+  opacity: 0.72;
+}
+
+.md-tabs__link:hover {
+  opacity: 1;
+}
+
+.md-tabs__item--active .md-tabs__link,
+.md-tabs__link--active {
+  border-bottom-color: var(--syn-amber);
+  opacity: 1;
+}
+
+/* Search — angular field, sharp dropdown */
+.md-search__form {
+  border-radius: var(--syn-radius);
+}
+
+[data-md-toggle="search"]:checked ~ .md-header .md-search__form {
+  border-radius: var(--syn-radius) var(--syn-radius) 0 0;
+}
+
+.md-search__output {
+  border-radius: 0 0 var(--syn-radius) var(--syn-radius);
+}
+
+.md-search-result__meta {
+  font-family: var(--syn-font-display);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.68rem;
+}
+
+/* Sidebar navigation */
+.md-nav__title {
+  font-family: var(--syn-font-display);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.md-nav__link--active {
+  font-weight: 600;
+}
+
+/* "Back to top" button — no pill */
+.md-top {
+  border-radius: var(--syn-radius);
+}
+
+/* Selection & focus */
+::selection {
+  background: rgba(240, 160, 44, 0.28);
+}
+
+/* --------------------------------------------------------------------------
+   Typography — Rajdhani display over IBM Plex Sans body
+   -------------------------------------------------------------------------- */
+
+.md-typeset {
+  font-size: 0.78rem;
+  line-height: 1.65;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5 {
+  font-family: var(--syn-font-display);
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset h1 {
+  font-weight: 700;
+  font-size: 2.1em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--syn-line);
+  position: relative;
+}
+
+.md-typeset h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 4.5rem;
+  height: 3px;
+  background: var(--syn-amber);
+  clip-path: polygon(0 0, 100% 0, calc(100% - 0.35rem) 100%, 0 100%);
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  font-size: 1.5em;
+  letter-spacing: 0.03em;
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid var(--syn-line);
+}
+
+.md-typeset h2::before {
+  content: "";
+  display: inline-block;
+  width: 0.5em;
+  height: 0.72em;
+  margin-right: 0.45em;
+  background: var(--syn-amber);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0.28em 100%);
+}
+
+.md-typeset h3 {
+  font-weight: 600;
+  font-size: 1.2em;
+  letter-spacing: 0.03em;
+}
+
+.md-typeset h4 {
+  font-weight: 600;
+  font-size: 1em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset strong {
+  font-weight: 600;
+  color: var(--md-default-fg-color);
+}
+
+/* Lists — amber tick markers, tighter rhythm */
+.md-typeset ul li::marker {
+  color: var(--syn-mark);
+}
+
+.md-typeset ol li::marker {
+  color: var(--syn-mark);
+  font-weight: 600;
+}
+
+/* Links — steel blue, amber on hover */
+.md-typeset a {
+  transition: color 100ms;
+}
+
+.md-typeset a:hover,
+.md-typeset a:focus {
+  color: var(--syn-link-hover);
+}
+
+/* --------------------------------------------------------------------------
+   Blockquotes → notice boxes (the rulebook uses them as alerts)
+   -------------------------------------------------------------------------- */
+
+.md-typeset blockquote {
+  position: relative;
+  margin: 1.2em 0;
+  padding: 0.7em 1em 0.7em 2.6em;
+  color: var(--md-default-fg-color);
+  background: var(--syn-panel-bg);
+  border-left: 3px solid var(--syn-amber);
+  border-top: 1px solid var(--syn-line);
+  border-right: 1px solid var(--syn-line);
+  border-bottom: 1px solid var(--syn-line);
+  border-radius: 0;
+  clip-path: polygon(0 0, calc(100% - 0.7rem) 0, 100% 0.7rem, 100% 100%, 0 100%);
+}
+
+.md-typeset blockquote::before {
+  content: "!";
+  position: absolute;
+  left: 0.85em;
+  top: 0.78em;
+  width: 1.05em;
+  height: 1.05em;
+  line-height: 1.05em;
+  text-align: center;
+  font-family: var(--syn-font-display);
+  font-weight: 700;
+  font-size: 0.85em;
+  color: var(--syn-mark);
+  border: 1px solid var(--syn-mark);
+  clip-path: polygon(25% 0, 75% 0, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0 75%, 0 25%);
+}
+
+.md-typeset blockquote > :first-child {
+  margin-top: 0;
+}
+
+.md-typeset blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Tables — data readouts (tax rates, FAT points)
+   -------------------------------------------------------------------------- */
+
+.md-typeset table:not([class]) {
+  border: 1px solid var(--syn-line);
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 0.74rem;
+}
+
+.md-typeset table:not([class]) th {
+  font-family: var(--syn-font-display);
+  font-weight: 600;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--md-default-fg-color);
+  background: var(--syn-table-head-bg);
+  border-bottom: 2px solid var(--syn-amber);
+}
+
+.md-typeset table:not([class]) td {
+  border-top: 1px solid var(--syn-line);
+}
+
+.md-typeset table:not([class]) tbody tr:hover {
+  background: var(--syn-row-hover);
+  box-shadow: none;
+}
+
+/* --------------------------------------------------------------------------
+   Code — EVE transaction identifiers, formulas
+   -------------------------------------------------------------------------- */
+
+.md-typeset code {
+  border: 1px solid var(--syn-line);
+  border-radius: var(--syn-radius);
+  padding: 0.1em 0.35em;
+  font-size: 0.82em;
+}
+
+.md-typeset pre > code {
+  border: 1px solid var(--syn-line);
+  border-radius: var(--syn-radius);
+}
+
+/* --------------------------------------------------------------------------
+   Footer
+   -------------------------------------------------------------------------- */
+
+.md-footer {
+  border-top: 1px solid rgba(240, 160, 44, 0.25);
+}
+
+.md-footer-meta {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* --------------------------------------------------------------------------
+   Print — keep the rulebook printable
+   -------------------------------------------------------------------------- */
+
+@media print {
+  .md-typeset blockquote {
+    clip-path: none;
+    background: none;
+  }
+}

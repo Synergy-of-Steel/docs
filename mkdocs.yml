@@ -3,27 +3,36 @@ site_description: Dokumentation der Allianz Synergy of Steel
 
 theme:
   name: material
+  icon:
+    logo: material/sword-cross
+  favicon: assets/favicon.svg
+  font:
+    text: IBM Plex Sans
+    code: IBM Plex Mono
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-night
         name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
   features:
     - navigation.tabs
     - navigation.top
     - search.suggest
     - search.highlight
     - content.code.copy
+
+extra_css:
+  - stylesheets/theme.css
 
 plugins:
   - search

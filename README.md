@@ -1,0 +1,2 @@
+# docs
+Alliance documentation

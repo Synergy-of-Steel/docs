@@ -1,0 +1,46 @@
+site_name: Synergy of Steel
+site_description: Dokumentation der Allianz Synergy of Steel
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      languages:
+        - locale: de
+          name: Deutsch
+          build: true
+          default: true
+        - locale: en
+          name: English
+          build: true
+
+nav:
+  - Start: index.md
+  - Regelwerk: rules.md
+  - SRP: srp.md
+  - Prozesse: processes.md

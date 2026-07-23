@@ -8,8 +8,6 @@
 
 ### 1.1 · Aufnahmebedingungen
 
-Jede Corp muss in der Lage sein, verlässlich mindestens 5 Piloten in Flotten innerhalb der EU-Timezone bereitzustellen. Wird diese Anforderung dauerhaft nicht erfüllt, können Konsequenzen durch die Allianz Führung beschlossen werden.
-
 Jede Corporation der Allianz Synergy of Steel muss eine aktive Beteiligung an Allianz-Flotten nachweisen. Die Bewertung erfolgt auf Basis der jeweils letzten 3 Monate anhand der folgenden zwei Kriterien, die beide erfüllt sein müssen:
 
 1. **Beteiligungsquote:** Mindestens 50 % der realen Piloten einer Corporation müssen an Flotten teilgenommen haben.

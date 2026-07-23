@@ -2,8 +2,7 @@
 
 **Synergy of Steel** · Stand Juni 2026
 
-> 
-*Das oberste Ziel der Allianz ist das Erreichen der gemeinsamen Ziele.* "Synergy first." *Grundlage hierfür ist der Respekt der Piloten füreinander, basierend auf Ehrlichkeit und gegenseitiger Hilfe. Allianzregeln haben stets Vorrang vor Corpsregeln. Corps dürfen eigene Regeln einführen, solange diese den Allianzregeln nicht widersprechen.*
+>  *Das oberste Ziel der Allianz ist das Erreichen der gemeinsamen Ziele.* "Synergy first." *Grundlage hierfür ist der Respekt der Piloten füreinander, basierend auf Ehrlichkeit und gegenseitiger Hilfe. Allianzregeln haben stets Vorrang vor Corpsregeln. Corps dürfen eigene Regeln einführen, solange diese den Allianzregeln nicht widersprechen.*
 
 ## Abschnitt 1 · Allgemeines
 

@@ -8,8 +8,6 @@
 
 ### 1.1 · Admission Requirements
 
-Every Corp must be able to reliably field at least 5 pilots in fleets within the EU timezone. If this requirement is not met on an ongoing basis, the Alliance Leadership may decide on consequences.
-
 Every Corporation in the Synergy of Steel alliance must demonstrate active participation in Alliance fleets. The evaluation is based on the respective last 3 months, using the following two criteria, both of which must be met:
 
 1. **Participation rate:** At least 50 % of a Corporation's real pilots must have taken part in fleets.

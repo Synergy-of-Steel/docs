@@ -1,5 +1,6 @@
 site_name: Synergy of Steel
 site_description: Dokumentation der Allianz Synergy of Steel
+site_url: https://synergy-of-steel.github.io/docs/
 
 theme:
   name: material

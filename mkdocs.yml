@@ -47,6 +47,11 @@ plugins:
         - locale: en
           name: English
           build: true
+          site_description: Documentation for the Synergy of Steel alliance
+          nav_translations:
+            Start: Home
+            Regelwerk: Rulebook
+            Prozesse: Processes
 
 nav:
   - Start: index.md

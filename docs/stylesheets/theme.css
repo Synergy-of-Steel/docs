@@ -292,10 +292,13 @@
    Blockquotes → notice boxes (the rulebook uses them as alerts)
    -------------------------------------------------------------------------- */
 
+/* [dir="ltr"] matches Material's own blockquote specificity (which otherwise
+   wins the padding-left/border-left cascade over a plain .md-typeset selector) */
+[dir="ltr"] .md-typeset blockquote,
 .md-typeset blockquote {
   position: relative;
   margin: 1.2em 0;
-  padding: 0.7em 1em 0.7em 2.6em;
+  padding: 0.7em 1em 0.7em 2.75em;
   color: var(--md-default-fg-color);
   background: var(--syn-panel-bg);
   border-left: 3px solid var(--syn-amber);

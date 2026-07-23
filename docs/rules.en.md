@@ -281,7 +281,7 @@ Votes by the Alliance Leadership within the Corp Leadership that affect the Alli
 
 All ships requested by an official FC in an official fleet (CTA / HomeDef / Strat-OP) are replaced 100 %. Additional ships may be replaced as a courtesy if they were used sensibly (e.g., for home defense). In this case, Junior FCs can create an SRP link and explain the situation to the Alliance Leadership.
 
-> Capitals and Supercapitals are exempt from this rule. See the supplementary [info ping](https://discord.com/channels/230539532892766208/358378482826477568/916714410846859294) on Discord.
+> Capitals and Supercapitals are exempt from this rule. See the separate [Capital SRP rules](srp.md) as well as the supplementary [info ping](https://discord.com/channels/230539532892766208/358378482826477568/916714410846859294) on Discord.
 
 ### 7.1 · SRP Calculation
 

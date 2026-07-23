@@ -281,7 +281,7 @@ Abstimmungen der Allianz Führung im Rahmen des Corp-Leaderships, die die Allian
 
 Alle von einem offiziellen FC in einer offiziellen Flotte (CTA / HomeDef / Strat-OP) geforderten Schiffe werden zu 100 % ersetzt. Weitere Schiffe können aus Kulanz ersetzt werden, wenn sie sinnvoll eingesetzt wurden (z. B. bei der Heimatverteidigung). Junior-FCs können in diesem Fall einen SRP-Link erstellen und der Allianz Führung den Sachverhalt erläutern.
 
-> Capitals und Supercapitals sind von dieser Regelung ausgenommen. Siehe ergänzenden [Info-Ping](https://discord.com/channels/230539532892766208/358378482826477568/916714410846859294) im Discord.
+> Capitals und Supercapitals sind von dieser Regelung ausgenommen. Siehe die gesonderte [SRP-Regelung für Capitals](srp.md) sowie den ergänzenden [Info-Ping](https://discord.com/channels/230539532892766208/358378482826477568/916714410846859294) im Discord.
 
 ### 7.1 · SRP-Berechnung
 

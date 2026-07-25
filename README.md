@@ -10,6 +10,7 @@ Zweisprachige Dokumentations-Website (Deutsch/Englisch) der Allianz Synergy of S
 ├── requirements.txt        # Gepinnte Python-Abhängigkeiten
 ├── docs/                   # Seiteninhalte
 │   ├── index.de.md / index.en.md
+│   ├── onboarding.de.md / onboarding.en.md
 │   ├── rules.de.md / rules.en.md
 │   ├── srp.de.md / srp.en.md
 │   └── processes.de.md / processes.en.md

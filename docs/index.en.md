@@ -4,6 +4,7 @@ This site is the central documentation for the **Synergy of Steel** alliance. He
 
 ## Overview
 
+* **[Onboarding](onboarding.md)** — The first steps for the CEO and the corp when joining the alliance.
 * **[Rulebook](rules.md)** — The complete alliance rulebook: admission requirements, taxes, fleet rules, FAT, SRP, and more.
 * **[SRP](srp.md)** — Information about the Ship Replacement Programme.
 * **[Processes](processes.md)** — Internal workflows and processes.

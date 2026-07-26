@@ -52,11 +52,10 @@ plugins:
           nav_translations:
             Start: Home
             Regelwerk: Rulebook
-            Prozesse: Processes
 
 nav:
   - Start: index.md
+  - Staging & Doctrine: staging.md
   - Onboarding: onboarding.md
   - Regelwerk: rules.md
   - SRP: srp.md
-  - Prozesse: processes.md

@@ -2,19 +2,20 @@
 
 Übersicht der Staging-Systeme der Allianz und der dort geflogenen Doctrines.
 
-## AH-
+## AH-B84 (Death Clone)
 
 * Nightmare
 * Barghest
 * Jackdaw
 * Raven Navy
 * Cerberus
+* Sleipnir
 
-## 1DH (Jump Clone)
+## 1DH-SX (Jump Clone)
 
 * Muninn (Armor)
 * Jackdaw
 
-## 4-H (Jump Clone)
+## 4-HWWF (Jump Clone)
 
 * WinCo-Doctrines

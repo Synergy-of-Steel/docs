@@ -9,7 +9,7 @@ Overview of the alliance's staging systems and the doctrines flown there.
 * Jackdaw
 * Raven Navy
 * Cerberus
-* Sleipnir
+* T3C
 
 ## 1DH-SX (Jump Clone)
 

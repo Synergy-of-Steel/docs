@@ -9,7 +9,7 @@
 * Jackdaw
 * Raven Navy
 * Cerberus
-* Sleipnir
+* T3C
 
 ## 1DH-SX (Jump Clone)
 

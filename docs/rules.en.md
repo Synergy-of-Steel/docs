@@ -285,9 +285,14 @@ All ships requested by an official FC in an official fleet (CTA / HomeDef / Stra
 
 ### 7.1 · SRP Calculation
 
-> **SRP amount =** [ship price incl. fitting] − [Platinum insurance payout] + [Platinum insurance cost]
+> **SRP amount =** [ship price incl. fitting] − [Platinum insurance payout] + [Platinum insurance cost] + [Cost of Import from Jita]
 
-Payment is made via contract: ship hull + ISK equal to the fitting price (cheapest price in B-9C24 or Jita) minus the insurance payout plus insurance cost (Platinum). Alternatively, the pilot can request ISK instead of the hull — in that case, return the hull via contract (DM to Erzus Fahrtas).
+Payment is made via ISK-payout or alternatively as contract minus the insurance payout plus the insurance cost (Platinum). The pilot may request ISK instead of the ship in that case, return the hull via contract (DM to Erzus Fahrtas).
+
+### 7.2 · Denial of SRP
+
+In cases of gross negligence regarding the ship, the alliance reserves the right to withhold SRP. 
+This includes, among other things, fitting errors, disregarding FC instructions, or other forms of gross negligence (e.g., warping into the enemy, failing to broadcast, etc.).
 
 ## Section 8 · Recruiting / Internal Transfers
 

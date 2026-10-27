@@ -285,9 +285,14 @@ Alle von einem offiziellen FC in einer offiziellen Flotte (CTA / HomeDef / Strat
 
 ### 7.1 · SRP-Berechnung
 
-> **SRP-Betrag =** [Schiffspreis inkl. Fitting] − [Versicherungsauszahlung Platin] + [Versicherungskosten Platin]
+> **SRP-Betrag =** [Schiffspreis inkl. Fitting] − [Versicherungsauszahlung Platin] + [Versicherungskosten Platin] + [Importkosten aus Jita]
 
-Auszahlung erfolgt per Contract: Schiffshülle + ISK in Höhe des Fittingpreises (günstigster Preis in B-9C24 oder Jita) abzüglich der Versicherungsauszahlung plus Versicherungskosten (Platin). Alternativ kann der Pilot ISK statt der Hülle fordern — dazu die Hülle per Contract zurückgeben (DM an Erzus Fahrtas).
+Auszahlung erfolgt per ISK-Zahlung oder Alternativ als Contract abzüglich der Versicherungsauszahlung plus Versicherungskosten (Platin). Der Pilot kann ISK statt der Hülle fordern — dazu die Hülle per Contract zurückgeben (DM an Erzus Fahrtas).
+
+### 7.2 · SRP-Ausschluss
+
+Bei grob fahrlässigem Umgang mit dem Schiff behält sich die Allianz vor kein SRP auszuzahlen. 
+Hierunter fallen u.A. Fehler beim Fitting, Missachtung von FC-Anweisungen oder anderweitigem grob fahrlässigen Umgang (z.B. in Gegner warpen, nicht broadcasten, ...)
 
 ## Abschnitt 8 · Recruiting / Interne Wechsel
 
